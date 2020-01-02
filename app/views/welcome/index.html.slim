@@ -1,0 +1,6 @@
+h1 My Rails Girls Diary
+- for entry in @entries
+  .box
+    h2= link_to(entry.title, entry_path(entry))
+    p= entry.date
+    p= entry.contents

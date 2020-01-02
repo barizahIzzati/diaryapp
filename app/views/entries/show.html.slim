@@ -1,0 +1,13 @@
+= form_for(@entry) do |form|
+  p
+    = form.label("title")
+  p
+    = form.text_field("title")
+  p
+    = form.label("contents")
+  p
+    = form.text_area("contents")
+  p
+    = form.submit
+button
+  = link_to("Back to all entries", entries_path)

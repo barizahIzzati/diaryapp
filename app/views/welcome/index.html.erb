@@ -1,9 +1,0 @@
-
-<h1>My Rails Girls Diary</h1>
-<% for entry in @entries %>
-  <div class="box">
-    <h2><%= link_to(entry.title, entry_path(entry)) %></h2>
-      <p><%= entry.date %></p>
-        <p><%= entry.contents %></p>
-  </div>
-<% end %>
